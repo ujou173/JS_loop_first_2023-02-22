@@ -9,17 +9,72 @@
 <body>
   <div id="root"></div>
   <script>
-    let pokemon = ["피카츄", "라이츄", "파이리", "꼬부기", "버터플", "야도란"];
+    let pokemon = ["피카츄", "라이츄", "파이리", "꼬부기", "버터플", "야도란", "피존투", "또가스", "잠만보"];
     let root = document.getElementById("root");
+    
+    // li 태그를 찍어내는 기계가 되었다.
+    // for(let i = 0; i < pokemon.length; i++) {
+    //   let li = document.createElement("li");
+    //     li.textContent = pokemon[i];
+    //     root.appendChild(li);
+    //   }
 
-    for(
-      let index = 0; //숫자 0을 index라는 변수에 담았다
-      index < pokemon.length; // 비교 연산을 하고 있다.
-      index = index + 1
-      ) {
-        console.log(pokemon[index]);
+      let student = [
+        "강지민",
+        "곽윤호",
+        "권예준",
+        "김동주",
+        "김은아",
+        "김종윤",
+        "김지섭",
+        "김형진",
+        "노수민",
+        "류은이",
+        "박달재",
+        "박수연",
+        "박준형",
+        "성해경",
+        "이경택",
+        "이세민",
+        "이재권",
+        "임지성",
+        "장루빈",
+        "정성철",
+        "정지은",
+        "정희은",
+        "최대건",
+        "한유진",
+        "허진",
+      ];
+      console.log(student[8]);
+      
+      for(let i = 0; i < student.length; i++) {
+        let li = document.createElement("li");
+        li.textContent = i + " " + student[i];
+        li.style.backgroundColor = "#ccc";
+        // root.appendChild(li);
       }
 
+      for(let i = 0; i <= 13; i++) {
+        let p = document.createElement("p");
+        p.textContent = "13" + " x " + i + " = " + (13*i);
+        // root.appendChild(p);
+      }
+
+      for(let i = 0; i <= 36; i++) {
+        let div = document.createElement("div");
+        div.style.backgroundColor = "#555";
+        div.style.width = "120px";
+        div.style.height = "60px";
+        div.style.display = "inline-block"
+        div.style.margin = "0.5rem"
+        root.appendChild(div);
+      }
+
+      // 내가 만들지 않은 함수()
+    // getElementById()
+    // createElement()
+    // appendChild()
     </script>
 </body>
 </html>
