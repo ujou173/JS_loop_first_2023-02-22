@@ -5,6 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    #root > div {
+      width: 120px;
+      height: 60px;
+      margin-right: 10px;
+      margin-bottom: 10px;;
+      display: inline-block;
+      background-color: #555;
+    }
+
+    #root > div:nth-of-type(3n) {
+      margin-right: 120px;
+    }
+  </style>
 </head>
 <body>
   <div id="root"></div>
@@ -58,17 +72,22 @@
       for(let i = 0; i <= 13; i++) {
         let p = document.createElement("p");
         p.textContent = "13" + " x " + i + " = " + (13*i);
-        // root.appendChild(p);
+        root.appendChild(p);
       }
 
-      for(let i = 0; i <= 36; i++) {
+      for(let i = 0; i < 36; i++) {
         let div = document.createElement("div");
-        div.style.backgroundColor = "#555";
-        div.style.width = "120px";
-        div.style.height = "60px";
-        div.style.display = "inline-block"
-        div.style.margin = "0.5rem"
+        // div.style.backgroundColor = "#555";
+        // div.style.width = "120px";
+        // div.style.height = "60px";
+        // div.style.display = "inline-block"
+        // div.style.margin = "0.5rem"
         root.appendChild(div);
+      }
+
+      let number = 10;
+      for(let i = 0; i < number; i++) {
+        console.log(i);
       }
 
       // 내가 만들지 않은 함수()
