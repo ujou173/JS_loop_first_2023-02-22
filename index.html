@@ -10,10 +10,16 @@
   <div id="root"></div>
   <script>
     let pokemon = ["피카츄", "라이츄", "파이리", "꼬부기", "버터플", "야도란"];
-    console.dir(pokemon);
-    console.log(pokemon[4]); //리터럴 -> 언젠가 수정해줘야 할 확률이 상당히 높다
-    console.log(pokemon.length);
-    console.log(pokemon[pokemon.length-1]);
+    let root = document.getElementById("root");
+
+    for(
+      let index = 0; //숫자 0을 index라는 변수에 담았다
+      index < pokemon.length; // 비교 연산을 하고 있다.
+      index = index + 1
+      ) {
+        console.log(pokemon[index]);
+      }
+
     </script>
 </body>
 </html>
