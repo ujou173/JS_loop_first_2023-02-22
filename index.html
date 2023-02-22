@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    *{box-sizing: border-box;}
+    #root {
+      width: 960px;
+    }
     #root > div {
       width: 120px;
       height: 60px;
@@ -13,10 +17,12 @@
       margin-bottom: 10px;;
       display: inline-block;
       background-color: #555;
+      text-align: center;
+      padding-top: 10px;
     }
 
     #root > div:nth-of-type(3n) {
-      margin-right: 120px;
+      margin-right: 100px;
     }
   </style>
 </head>
@@ -26,12 +32,9 @@
     let pokemon = ["피카츄", "라이츄", "파이리", "꼬부기", "버터플", "야도란", "피존투", "또가스", "잠만보"];
     let root = document.getElementById("root");
     
-    // li 태그를 찍어내는 기계가 되었다.
-    // for(let i = 0; i < pokemon.length; i++) {
-    //   let li = document.createElement("li");
-    //     li.textContent = pokemon[i];
-    //     root.appendChild(li);
-    //   }
+    for(let i = 0; i < pokemon.length; i++) {
+      console.log(pokemon[i]);
+      }
 
       let student = [
         "강지민",
@@ -71,18 +74,14 @@
 
       for(let i = 0; i <= 13; i++) {
         let p = document.createElement("p");
-        p.textContent = "13" + " x " + i + " = " + (13*i);
+        p.textContent = "13 x " + i + " = " + (13*i);
         root.appendChild(p);
       }
 
-      for(let i = 0; i < 36; i++) {
+      for(let i = 0; i < 25; i++) {
         let div = document.createElement("div");
-        // div.style.backgroundColor = "#555";
-        // div.style.width = "120px";
-        // div.style.height = "60px";
-        // div.style.display = "inline-block"
-        // div.style.margin = "0.5rem"
         root.appendChild(div);
+        div.textContent = student[i];
       }
 
       let number = 10;
