@@ -89,6 +89,23 @@
         console.log(i);
       }
 
+      // 객체 안에 객체, 배열 / 배열 안에 객체, 배열이 가능하다면 for문을 이용해서 이름: xxx 나이: xx 성별: XX 이런 리스트를 자동으로 출력시킬 수 있지 않을까?
+      let human = {
+        name : "",
+        age : "",
+        gender : "",
+      }
+
+      let name_list = ["이름1", "이름2", "이름3"];
+      let age_list = ["24세", "21세", "33세"];
+      let gender_list = ["male", "female", "male"];
+
+      for(i=0; i < 3; i++) {
+        let div = document.createElement("div");
+        root.appendChild(div);
+        // i를 변수로 div 안에 textcontent를 집어넣는다
+      }
+
       // 내가 만들지 않은 함수()
     // getElementById()
     // createElement()
